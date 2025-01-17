@@ -15,13 +15,13 @@
         vmute {
             bindings = <&kp C_MUTE>;
             key-positions = <23 35>;
-            layers = <2>;
+            layers = <3>;
         };
 
         play_pause {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <22 34>;
-            layers = <2>;
+            layers = <3>;
         };
     };
 
@@ -69,7 +69,17 @@
 &kp DELETE                          &kp Q            &kp W  &kp E     &kp R      &kp T        &kp Y    &kp U         &kp I      &kp O    &kp P                &kp BSPC
 &kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp S  &kp D     &kp F      &kp G        &kp H    &kp J         &kp K      &kp L    &HMR RIGHT_ALT SEMI  &kp RIGHT_SHIFT
 &HML LEFT_CONTROL NON_US_BACKSLASH  &kp Z            &kp X  &kp C     &kp V      &kp B        &kp N    &kp M         &kp COMMA  &kp DOT  &kp FSLH             &kp RIGHT_CONTROL
-                                                            &kp LGUI  &lt 1 TAB  &kp SPACE    &kp RET  &lt 2 ESCAPE  &kp RGUI
+                                                            &kp LGUI  &lt 2 TAB  &kp SPACE    &kp RET  &lt 3 ESCAPE  &kp RGUI
+            >;
+        };
+
+        layer_4 {
+            display-name = "colemak";
+            bindings = <
+&kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp G        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
+&kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp R  &kp S     &kp T      &kp D        &kp H    &kp N         &kp E      &kp I    &HMR RIGHT_ALT O  &kp RIGHT_SHIFT
+&HML LEFT_CONTROL NON_US_BACKSLASH  &kp Z            &kp X  &kp C     &kp V      &kp B        &kp K    &kp M         &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_CONTROL
+                                                            &kp LGUI  &lt 2 TAB  &kp SPACE    &kp RET  &lt 3 ESCAPE  &kp RGUI
             >;
         };
 
@@ -100,7 +110,7 @@
             bindings = <
 &kp ESCAPE        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp RIGHT_CONTROL  &kp CAPSLOCK   &kp INS      &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
-&kp LEFT_CONTROL  &to 0             &to 4             &trans            &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
+&kp LEFT_CONTROL  &to 0             &to 1             &trans            &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
                                                       &kp LGUI          &trans            &kp LEFT_ALT        &trans             &trans         &trans
             >;
         };
@@ -114,24 +124,14 @@
                                            &kp LGUI      &trans        &kp SPACE            &kp RET  &trans   &kp RALT
             >;
         };
-
-        layer_4 {
-            display-name = "colemak";
-            bindings = <
-&kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp G        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
-&kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp R  &kp S     &kp T      &kp D        &kp H    &kp N         &kp E      &kp I    &HMR RIGHT_ALT O  &kp RIGHT_SHIFT
-&HML LEFT_CONTROL NON_US_BACKSLASH  &kp Z            &kp X  &kp C     &kp V      &kp B        &kp K    &kp M         &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_CONTROL
-                                                            &kp LGUI  &lt 1 TAB  &kp SPACE    &kp RET  &lt 2 ESCAPE  &kp RGUI
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
