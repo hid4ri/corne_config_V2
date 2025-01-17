@@ -64,7 +64,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "qwerty";
             bindings = <
 &kp DELETE                          &kp Q            &kp W  &kp E     &kp R      &kp T        &kp Y    &kp U         &kp I      &kp O    &kp P                &kp BSPC
 &kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp S  &kp D     &kp F      &kp G        &kp H    &kp J         &kp K      &kp L    &HMR RIGHT_ALT SEMI  &kp RIGHT_SHIFT
@@ -84,7 +84,7 @@
             bindings = <
 &kp LEFT_ALT      &kp EXCL             &kp CARET                &kp GRAVE            &kp DLLR                        &kp POUND                    &kp AMPS        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp BSPC
 &kp LEFT_SHIFT    &HML EXCL NUMBER_1   &HML AT NUMBER_2         &HML HASH NUMBER_3   &HML DOLLAR NUMBER_4            &HML PERCENT N5              &kp APOSTROPHE  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL      &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &HML CARET NUMBER_6  &HML AMPERSAND NUMBER_7  &HML ASTRK NUMBER_8  &HML LEFT_PARENTHESIS NUMBER_9  &HML RIGHT_PARENTHESIS N0    &kp PERCENT     &kp NUHS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &HML CARET NUMBER_6  &HML AMPERSAND NUMBER_7  &HML ASTRK NUMBER_8  &HML LEFT_PARENTHESIS NUMBER_9  &HML RIGHT_PARENTHESIS N0    &kp ASTRK       &kp NUHS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp RIGHT_CONTROL
                                                                 &kp LGUI             &trans                          &kp SPACE                    &kp RET         &trans       &kp RALT
             >;
         };
@@ -100,7 +100,7 @@
             bindings = <
 &kp ESCAPE        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp RIGHT_CONTROL  &kp CAPSLOCK   &kp INS      &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
-&kp LEFT_CONTROL  &trans            &trans            &trans            &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
+&kp LEFT_CONTROL  &to 0             &to 4             &trans            &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
                                                       &kp LGUI          &trans            &kp LEFT_ALT        &trans             &trans         &trans
             >;
         };
@@ -112,6 +112,16 @@
 &kp LEFT_SHIFT    &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS            &kp F5   &kp F6   &kp F7    &kp F8   &bt BT_SEL 2  &bt BT_SEL 3
 &kp LEFT_CONTROL  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &HML DOT NUMBER_0    &kp F9   &kp F10  &kp F11   &kp F12  &bt BT_SEL 4  &bt BT_CLR_ALL
                                            &kp LGUI      &trans        &kp SPACE            &kp RET  &trans   &kp RALT
+            >;
+        };
+
+        layer_4 {
+            display-name = "colemak";
+            bindings = <
+&kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp G        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
+&kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp R  &kp S     &kp T      &kp D        &kp H    &kp N         &kp E      &kp I    &HMR RIGHT_ALT O  &kp RIGHT_SHIFT
+&HML LEFT_CONTROL NON_US_BACKSLASH  &kp Z            &kp X  &kp C     &kp V      &kp B        &kp K    &kp M         &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_CONTROL
+                                                            &kp LGUI  &lt 1 TAB  &kp SPACE    &kp RET  &lt 2 ESCAPE  &kp RGUI
             >;
         };
     };
