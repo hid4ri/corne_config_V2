@@ -92,9 +92,9 @@
 
             display-name = "Symbols";
             bindings = <
-&kp LEFT_ALT      &kp EXCL             &kp CARET                &kp GRAVE            &kp DLLR                        &kp POUND                    &kp AMPS        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp BSPC
-&kp LEFT_SHIFT    &HML EXCL NUMBER_1   &HML AT NUMBER_2         &HML HASH NUMBER_3   &HML DOLLAR NUMBER_4            &HML PERCENT N5              &kp APOSTROPHE  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL      &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &HML CARET NUMBER_6  &HML AMPERSAND NUMBER_7  &HML ASTRK NUMBER_8  &HML LEFT_PARENTHESIS NUMBER_9  &HML RIGHT_PARENTHESIS N0    &kp ASTRK       &kp NUHS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp RIGHT_CONTROL
+&kp LEFT_ALT      &kp EXCL             &kp CARET                &kp GRAVE            &kp DLLR                        &kp POUND                    &kp AMPS        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS             &kp BSPC
+&kp LEFT_SHIFT    &HML EXCL NUMBER_1   &HML AT NUMBER_2         &HML HASH NUMBER_3   &HML DOLLAR NUMBER_4            &HML PERCENT N5              &kp APOSTROPHE  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL             &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &HML CARET NUMBER_6  &HML AMPERSAND NUMBER_7  &HML ASTRK NUMBER_8  &HML LEFT_PARENTHESIS NUMBER_9  &HML RIGHT_PARENTHESIS N0    &kp ASTRK       &kp NUHS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp RIGHT_CONTROL
                                                                 &kp LGUI             &trans                          &kp SPACE                    &kp RET         &trans       &kp RALT
             >;
         };
