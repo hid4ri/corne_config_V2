@@ -15,13 +15,13 @@
         vmute {
             bindings = <&kp C_MUTE>;
             key-positions = <23 35>;
-            layers = <4>;
+            layers = <5>;
         };
 
         play_pause {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <22 34>;
-            layers = <4>;
+            layers = <5>;
         };
     };
 
@@ -69,7 +69,7 @@
 &kp DELETE                          &kp Q            &kp W  &kp E     &kp R      &kp T        &kp Y    &kp U         &kp I      &kp O    &kp P                &kp BSPC
 &kp LEFT_SHIFT                      &kp A            &kp S  &kp D     &kp F      &kp G        &kp H    &kp J         &kp K      &kp L    &kp SEMI             &kp RIGHT_SHIFT
 &HML LEFT_CONTROL NON_US_BACKSLASH  &HML LEFT_ALT Z  &kp X  &kp C     &kp V      &kp B        &kp N    &kp M         &kp COMMA  &kp DOT  &HMR RIGHT_ALT FSLH  &kp RIGHT_CONTROL
-                                                            &kp LGUI  &lt 3 TAB  &kp SPACE    &kp RET  &lt 4 ESCAPE  &kp RGUI
+                                                            &kp LGUI  &lt 4 TAB  &kp SPACE    &kp RET  &lt 5 ESCAPE  &kp RGUI
             >;
         };
 
@@ -79,18 +79,29 @@
 &kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp B        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON        &kp BSPC
 &kp LEFT_SHIFT                      &kp A            &kp R  &kp S     &kp T      &kp G        &kp M    &kp N         &kp E      &kp I    &kp O                &kp RIGHT_SHIFT
 &HML LEFT_CONTROL NON_US_BACKSLASH  &HML LEFT_ALT Z  &kp X  &kp C     &kp D      &kp V        &kp K    &kp H         &kp COMMA  &kp DOT  &HMR RIGHT_ALT FSLH  &kp RIGHT_CONTROL
-                                                            &kp LGUI  &lt 3 TAB  &kp SPACE    &kp RET  &lt 4 ESCAPE  &kp RGUI
+                                                            &kp LGUI  &lt 4 TAB  &kp SPACE    &kp RET  &lt 5 ESCAPE  &kp RGUI
             >;
         };
 
         Gaming_Layer {
             display-name = "Gaming";
             bindings = <
-&kp BACKSPACE                       &kp Y  &kp U      &kp I       &kp P      &kp ESCAPE       &kp I             &kp Q      &kp W           &kp E  &kp T  &kp TAB
-&kp DELETE                          &kp H  &kp J      &kp K       &kp L      &kp SEMICOLON    &kp M             &kp A      &kp S           &kp D  &kp F  &kp G
-&HML LEFT_CONTROL NON_US_BACKSLASH  &kp R  &kp COMMA  &kp PERIOD  &kp SLASH  &kp B            &kp N             &kp Z      &kp X           &kp C  &kp V  &kp SPACE
-                                                      &kp LGUI    &lt 3 TAB  &kp ENTER        &kp LEFT_CONTROL  &kp LSHFT  &lt 4 LEFT_ALT
+&kp BACKSPACE                       &kp Y  &kp U      &kp O       &kp P      &kp ESCAPE       &kp T             &kp Q      &kp W           &kp E  &kp B  &kp TAB
+&kp DELETE                          &kp H  &kp J      &kp K       &kp L      &kp SEMICOLON    &kp G             &kp A      &kp S           &kp D  &kp F  &kp R
+&HML LEFT_CONTROL NON_US_BACKSLASH  &kp I  &kp COMMA  &kp PERIOD  &kp SLASH  &kp M            &kp N             &kp Z      &kp X           &kp C  &kp V  &kp SPACE
+                                                      &kp LGUI    &lt 5 TAB  &kp ENTER        &kp LEFT_CONTROL  &kp LSHFT  &lt 3 LEFT_ALT
             >;
+        };
+
+        Gaming_Layer2 {
+            bindings = <
+&trans  &trans  &trans  &trans          &trans          &trans             &kp ESCAPE  &trans        &kp J         &kp I         &kp M         &kp TAB
+&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans             &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans      &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+                        &trans          &trans          &kp SPACE          &kp RET     &trans        &trans
+            >;
+
+            label = "gaming2";
         };
 
         lower_layer {
@@ -140,8 +151,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <3 4>;
-            then-layer = <5>;
+            if-layers = <4 5>;
+            then-layer = <6>;
         };
     };
 };
