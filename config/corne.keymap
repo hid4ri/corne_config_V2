@@ -73,12 +73,12 @@
             >;
         };
 
-        Colemak_Layer {
-            display-name = "colemak";
+        Colemak-dh_Layer {
+            display-name = "colemak-dh";
             bindings = <
-&kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp G        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
-&kp LEFT_SHIFT                      &HMR LEFT_ALT A  &kp R  &kp S     &kp T      &kp D        &kp H    &kp N         &kp E      &kp I    &HMR RIGHT_ALT O  &kp RIGHT_SHIFT
-&HML LEFT_CONTROL NON_US_BACKSLASH  &kp Z            &kp X  &kp C     &kp V      &kp B        &kp K    &kp M         &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_CONTROL
+&kp DELETE                          &kp Q            &kp W  &kp F     &kp P      &kp B        &kp J    &kp L         &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
+&kp LEFT_SHIFT                      &kp A            &kp R  &kp S     &kp T      &kp G        &kp M    &kp N         &kp E      &kp I    &HMR RIGHT_ALT O  &kp RIGHT_SHIFT
+&HML LEFT_CONTROL NON_US_BACKSLASH  &HML Z LEFT_ALT  &kp X  &kp C     &kp D      &kp V        &kp K    &kp H         &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_CONTROL
                                                             &kp LGUI  &lt 3 TAB  &kp SPACE    &kp RET  &lt 4 ESCAPE  &kp RGUI
             >;
         };
