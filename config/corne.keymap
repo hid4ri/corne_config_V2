@@ -37,6 +37,7 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 12 24 25 13 1 2 14 26 27 15 3 4 16 17 5 29 28 36 37 38 39 40 41>;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         HML: HML {
@@ -51,6 +52,31 @@
             hold-trigger-key-positions = <36 37 38 39 40 41 6 7 8 9 10 11 18 19 20 21 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             hold-trigger-on-release;
             require-prior-idle-ms = <0>;
+            hold-while-undecided;
+        };
+
+        HMShiftR: HMShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+
+        HMShiftL: HMShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 6 7 8 9 18 19 20 21>;
         };
     };
 
@@ -66,10 +92,10 @@
 
             display-name = "qwerty";
             bindings = <
-&kp DELETE                          &kp Q            &kp W  &kp E     &kp R      &kp T        &kp Y    &kp U         &kp I      &kp O    &kp P                &kp BSPC
-&kp LEFT_SHIFT                      &kp A            &kp S  &kp D     &kp F      &kp G        &kp H    &kp J         &kp K      &kp L    &kp SEMI             &kp RIGHT_SHIFT
-&HML LEFT_CONTROL NON_US_BACKSLASH  &HML LEFT_ALT Z  &kp X  &kp C     &kp V      &kp B        &kp N    &kp M         &kp COMMA  &kp DOT  &HMR RIGHT_ALT FSLH  &kp RIGHT_CONTROL
-                                                            &kp LGUI  &lt 4 TAB  &kp SPACE    &kp RET  &lt 5 ESCAPE  &kp RGUI
+&kp TAB     &kp Q                &kp W            &kp E            &kp R                   &kp T        &kp Y    &kp U                    &kp I             &kp O             &kp P                    &kp BSPC
+&kp CAPS    &HML LEFT_CONTROL A  &HML LEFT_ALT S  &HML LEFT_GUI D  &HMShiftL LEFT_SHIFT F  &kp G        &kp H    &HMShiftR RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &HMR RIGHT_CONTROL SEMI  &kp DELETE
+&kp ESCAPE  &kp Z                &kp X            &kp C            &kp V                   &kp B        &kp N    &kp M                    &kp COMMA         &kp DOT           &kp FSLH                 &kp NUBS
+                                                  &kp LGUI         &mo 4                   &kp SPACE    &kp RET  &mo 5                    &kp RGUI
             >;
         };
 
@@ -113,10 +139,10 @@
 
             display-name = "Symbols";
             bindings = <
-&kp LEFT_ALT      &kp EXCL             &kp CARET                &kp GRAVE            &kp DLLR                        &kp POUND                    &kp AMPS        &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS             &kp BSPC
-&kp LEFT_SHIFT    &HML EXCL NUMBER_1   &HML AT NUMBER_2         &HML HASH NUMBER_3   &HML DOLLAR NUMBER_4            &HML PERCENT N5              &kp APOSTROPHE  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL             &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &HML CARET NUMBER_6  &HML AMPERSAND NUMBER_7  &HML ASTRK NUMBER_8  &HML LEFT_PARENTHESIS NUMBER_9  &HML RIGHT_PARENTHESIS N0    &kp ASTRK       &kp NUHS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp RIGHT_CONTROL
-                                                                &kp LGUI             &trans                          &kp SPACE                    &kp RET         &trans       &kp RALT
+&kp LEFT_ALT      &kp EXCLAMATION     &kp AMPERSAND     &kp HASH            &kp NUHS              &kp QUESTION       &kp EQUAL            &kp APOSTROPHE           &kp AT_SIGN    &kp LEFT_BRACKET                &kp RIGHT_BRACKET                &kp BSPC
+&kp LEFT_SHIFT    &HML EXCL NUMBER_1  &HML AT NUMBER_2  &HML HASH NUMBER_3  &HML DOLLAR NUMBER_4  &HML PERCENT N5    &HMR CARET NUMBER_6  &HMR AMPERSAND NUMBER_7  &HMR ASTRK N8  &HMR LEFT_PARENTHESIS NUMBER_9  &HMR RIGHT_PARENTHESIS NUMBER_0  &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp TILDE           &kp GRAVE         &kp CARET           &kp DOLLAR            &kp PRINTSCREEN    &kp AT_SIGN          &kp APOS                 &kp MINUS      &kp FSLH                        &kp NUBS                         &kp RIGHT_CONTROL
+                                                        &kp LGUI            &trans                &kp SPACE          &kp RET              &trans                   &kp RALT
             >;
         };
 
@@ -129,10 +155,10 @@
 
             display-name = "Navi";
             bindings = <
-&kp ESCAPE        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp RIGHT_CONTROL  &kp CAPSLOCK   &kp INS      &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
-&kp LEFT_CONTROL  &to 0             &to 1             &to 2             &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
-                                                      &kp LGUI          &trans            &kp LEFT_ALT        &trans             &trans         &trans
+&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp RIGHT_CONTROL  &kp DELETE     &kp INS            &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT           &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
+&to 0           &to 1             &to 2             &trans            &trans            &trans              &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
+                                                    &kp LGUI          &kp LEFT_CONTROL  &kp LEFT_ALT        &trans             &trans         &kp RIGHT_CONTROL
             >;
         };
 
