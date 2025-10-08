@@ -139,9 +139,9 @@
 
             display-name = "Symbols";
             bindings = <
-&kp GRAVE     &kp EXCLAMATION           &kp AT                      &kp HASH                &kp DOLLAR              &kp PERCENT        &kp ASTRK            &kp EQUAL                &kp MINUS          &kp MINUS                    &kp EQUAL                  &kp BSPC
+&kp GRAVE     &kp EXCLAMATION           &kp AT                      &kp HASH                &kp DOLLAR              &kp PERCENT        &kp LC(X)            &kp LC(C)                &kp LC(V)          &kp MINUS                    &kp EQUAL                  &kp BSPC
 &kp CAPSLOCK  &HML LEFT_SHIFT NUMBER_1  &HML LEFT_CONTROL NUMBER_2  &HML LEFT_ALT NUMBER_3  &HML LEFT_GUI NUMBER_4  &HML PERCENT N5    &HMR CARET NUMBER_6  &HMR RIGHT_GUI NUMBER_7  &HMR RIGHT_ALT N8  &HMR RIGHT_CONTROL NUMBER_9  &HMR RIGHT_SHIFT NUMBER_0  &HMR AT APOS
-&kp NUBS      &kp CARET                 &kp AMPS                    &kp ASTRK               &kp CLEAR2              &kp PRINTSCREEN    &kp NUHS             &kp LEFT_BRACE           &kp RIGHT_BRACE    &kp LEFT_BRACKET             &kp RIGHT_BRACKET          &kp FSLH
+&kp NUBS      &kp CARET                 &kp AMPS                    &kp ASTRK               &kp LC(Z)               &kp LC(Y)          &kp NUHS             &kp LEFT_PARENTHESIS     &kp LEFT_BRACKET   &kp RIGHT_BRACKET            &kp RIGHT_PARENTHESIS      &kp FSLH
                                                                     &kp LGUI                &trans                  &kp SPACE          &kp RET              &trans                   &kp PRINTSCREEN
             >;
         };
@@ -155,10 +155,10 @@
 
             display-name = "Navi";
             bindings = <
-&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE     &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT      &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
-&to 0           &to 1             &to 2             &trans            &trans            &trans              &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
-                                                    &kp LGUI          &kp LEFT_CONTROL  &kp LEFT_ALT        &trans        &trans         &kp RIGHT_CONTROL
+&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LC(A)  &kp LC(N)      &kp LC(D)          &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT   &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
+&to 0           &to 1             &to 2             &trans            &trans            &trans              &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
+                                                    &kp LGUI          &kp LEFT_CONTROL  &kp LEFT_ALT        &trans     &trans         &kp RIGHT_CONTROL
             >;
         };
 
