@@ -155,10 +155,10 @@
 
             display-name = "Navi";
             bindings = <
-&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LG(A)  &kp LG(N)      &kp LG(D)          &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT   &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
-&to 0           &to 1             &to 2             &trans            &trans            &trans              &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
-                                                    &kp LGUI          &kp LEFT_CONTROL  &kp LEFT_ALT        &trans     &trans         &kp RIGHT_CONTROL
+&kp ESCAPE      &HML LG(LS(NUMBER_1)) LG(NUMBER_1)  &HML LG(LS(NUMBER_2)) LG(NUMBER_2)  &HML LG(LS(NUMBER_3)) LG(NUMBER_3)  &HML LG(LS(NUMBER_4)) LG(NUMBER_4)  &HML LG(LS(NUMBER_5)) LG(NUMBER_5)    &to 0     &to 1          &to 2              &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &HML LG(LS(NUMBER_6)) LG(NUMBER_6)  &HML LG(LS(NUMBER_7)) LG(NUMBER_7)  &HML LG(LS(NUMBER_8)) LG(NUMBER_8)  &HML LG(LS(NUMBER_9)) LG(NUMBER_9)  &HML LG(LS(NUMBER_0)) LG(NUMBER_0)    &kp LEFT  &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
+&kp LG(Q)       &kp LG(E)                           &kp LG(LS(SPACE))                   &kp LG(N)                           &kp LG(A)                           &kp LG(D)                             &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
+                                                                                        &kp LGUI                            &kp LEFT_CONTROL                    &kp LEFT_ALT                          &trans    &trans         &kp RIGHT_CONTROL
             >;
         };
 
