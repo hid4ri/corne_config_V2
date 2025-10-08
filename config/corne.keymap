@@ -141,7 +141,7 @@
             bindings = <
 &kp GRAVE     &kp EXCLAMATION           &kp AT                      &kp HASH                &kp DOLLAR              &kp PERCENT        &kp ASTRK            &kp EQUAL                &kp MINUS          &kp LEFT_BRACKET             &kp RIGHT_BRACKET          &kp BSPC
 &kp CAPSLOCK  &HML LEFT_SHIFT NUMBER_1  &HML LEFT_CONTROL NUMBER_2  &HML LEFT_ALT NUMBER_3  &HML LEFT_GUI NUMBER_4  &HML PERCENT N5    &HMR CARET NUMBER_6  &HMR RIGHT_GUI NUMBER_7  &HMR RIGHT_ALT N8  &HMR RIGHT_CONTROL NUMBER_9  &HMR RIGHT_SHIFT NUMBER_0  &kp RIGHT_SHIFT
-&kp NUBS      &kp CARET                 &kp AMPS                    &kp ASTRK               &kp DOLLAR              &kp PRINTSCREEN    &kp NUHS             &kp APOS                 &kp AT             &kp LEFT_BRACE               &kp RIGHT_BRACE            &kp FSLH
+&kp NUBS      &kp CARET                 &kp AMPS                    &kp ASTRK               &kp CLEAR2              &kp PRINTSCREEN    &kp NUHS             &kp APOS                 &kp AT             &kp LEFT_BRACE               &kp RIGHT_BRACE            &kp FSLH
                                                                     &kp LGUI                &trans                  &kp SPACE          &kp RET              &trans                   &kp PRINTSCREEN
             >;
         };
