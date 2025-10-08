@@ -155,7 +155,7 @@
 
             display-name = "Navi";
             bindings = <
-&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LC(A)  &kp LC(N)      &kp LC(D)          &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
+&kp ESCAPE      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LG(A)  &kp LG(N)      &kp LG(D)          &kp C_BRI_DN  &kp C_BRI_UP  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)    &kp LEFT   &kp DOWN       &kp UP             &kp RIGHT     &kp C_NEXT    &kp C_VOLUME_UP
 &to 0           &to 1             &to 2             &trans            &trans            &trans              &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP        &kp END       &kp C_PREV    &kp C_VOLUME_DOWN
                                                     &kp LGUI          &kp LEFT_CONTROL  &kp LEFT_ALT        &trans     &trans         &kp RIGHT_CONTROL
