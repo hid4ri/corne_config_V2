@@ -92,10 +92,10 @@
 
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE  &kp Q                   &kp W                &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O                 &kp P                       &HMR DELETE BACKSPACE
-&kp TAB     &HMShiftL LEFT_SHIFT A  &HML LEFT_CONTROL S  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G        &kp H    &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &HMShiftR RIGHT_SHIFT SEMI  &HMR AT APOS
-&kp NUBS    &kp Z                   &kp X                &kp C            &kp V            &kp B        &kp N    &kp M             &kp COMMA         &kp DOT               &kp FSLH                    &kp NUHS
-                                                         &kp LGUI         &mo 4            &kp SPACE    &kp RET  &mo 5             &kp RGUI
+&HML DELETE ESCAPE  &kp Q                   &kp W                &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O                 &kp P                       &kp BACKSPACE
+&kp TAB             &HMShiftL LEFT_SHIFT A  &HML LEFT_CONTROL S  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G        &kp H    &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &HMShiftR RIGHT_SHIFT SEMI  &HMR AT APOS
+&kp NUBS            &kp Z                   &kp X                &kp C            &kp V            &kp B        &kp N    &kp M             &kp COMMA         &kp DOT               &kp FSLH                    &kp NUHS
+                                                                 &kp LGUI         &mo 4            &kp SPACE    &kp RET  &mo 5             &kp RGUI
             >;
         };
 
