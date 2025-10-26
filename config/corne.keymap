@@ -95,7 +95,7 @@
 &trans  &kp Q                   &kp W                &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O                 &kp P                       &trans
 &trans  &HMShiftL LEFT_SHIFT A  &HML LEFT_CONTROL S  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G        &kp H    &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &HMShiftR RIGHT_SHIFT SEMI  &trans
 &trans  &kp Z                   &kp X                &kp C            &kp V            &kp B        &kp N    &kp M             &kp COMMA         &kp DOT               &kp FSLH                    &trans
-                                                     &kp BACKSPACE    &lt 4 TAB        &kp SPACE    &kp RET  &lt 5 DELETE      &kp ESCAPE
+                                                     &kp ESCAPE       &lt 4 TAB        &kp SPACE    &kp RET  &lt 5 DELETE      &kp BACKSPACE
             >;
         };
 
@@ -142,7 +142,7 @@
 &trans  &kp NUMBER_1                      &kp NUMBER_2             &kp NUMBER_3        &kp NUMBER_4        &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8          &kp NUMBER_9                 &kp NUMBER_0            &trans
 &trans  &HML LEFT_SHIFT NON_US_BACKSLASH  &HML LEFT_CONTROL GRAVE  &HML LEFT_ALT PIPE  &HML LEFT_GUI NUHS  &kp AT            &kp SQT       &HMR RIGHT_GUI MINUS  &HMR RIGHT_ALT EQUAL  &HMR RIGHT_CONTROL ASTERISK  &HMR RIGHT_SHIFT SLASH  &trans
 &trans  &kp DELETE                        &kp K_CUT                &kp K_COPY          &kp LC(K_PASTE)     &kp LC(K_UNDO)    &kp K_REDO    &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp LEFT_BRACKET             &kp RIGHT_BRACKET       &trans
-                                                                   &kp BACKSPACE       &trans              &kp SPACE         &kp RET       &kp PRINTSCREEN       &kp CAPS
+                                                                   &kp CAPS            &trans              &kp SPACE         &kp RET       &kp PRINTSCREEN       &kp BACKSPACE
             >;
         };
 
