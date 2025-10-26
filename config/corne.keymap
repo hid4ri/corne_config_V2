@@ -102,7 +102,7 @@
         Colemak-dh_Layer {
             display-name = "colemak-dh";
             bindings = <
-&kp ESCAPE  &kp Q              &kp W                &kp F            &kp P            &kp B        &kp J    &kp L             &kp U             &kp Y                 &kp DELETE          &kp BACKSPACE
+&kp ESCAPE  &kp Q              &kp W                &kp F            &kp P            &kp B        &kp J    &kp L             &kp U             &kp Y                 &kp BACKSPACE       &kp DELETE
 &kp TAB     &HML LEFT_SHIFT A  &HML LEFT_CONTROL R  &HML LEFT_ALT S  &HML LEFT_GUI T  &kp G        &kp M    &HMR RIGHT_GUI N  &HMR RIGHT_ALT E  &HMR RIGHT_CONTROL I  &HMR RIGHT_SHIFT O  &kp SEMICOLON
 &kp NUBS    &kp Z              &kp X                &kp C            &kp D            &kp V        &kp K    &kp H             &kp COMMA         &kp DOT               &kp FSLH            &HMR AT APOS
                                                     &kp LGUI         &mo 4            &kp SPACE    &kp RET  &mo 5             &kp RGUI
