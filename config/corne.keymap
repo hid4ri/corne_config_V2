@@ -127,10 +127,10 @@
 
         Gaming_Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans          &trans          &trans             &kp ESCAPE  &trans        &kp J         &kp I         &kp M         &kp TAB
-&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans             &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans      &kp NUMBER_6  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-                        &trans          &trans          &kp SPACE          &kp RET     &trans        &trans
+&trans  &trans  &trans  &trans          &trans          &trans             &kp ESCAPE    &kp J         &kp I         &kp M         &kp TAB       &trans
+&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0        &trans
+                        &trans          &trans          &kp SPACE          &kp RET       &trans        &trans
             >;
 
             label = "gaming2";
@@ -146,9 +146,9 @@
             display-name = "Symbols";
             bindings = <
 &kp ESCAPE  &kp NUMBER_1                      &kp NUMBER_2             &kp NUMBER_3        &kp NUMBER_4        &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7                     &kp NUMBER_8                 &kp NUMBER_9                             &kp NUMBER_0            &kp BACKSPACE
-&trans      &HML LEFT_SHIFT NON_US_BACKSLASH  &HML LEFT_CONTROL GRAVE  &HML LEFT_ALT PIPE  &HML LEFT_GUI NUHS  &kp AT          &HMR SQT AT   &HMR RIGHT_GUI MINUS             &HMR RIGHT_ALT EQUAL         &HMR RIGHT_CONTROL ASTERISK              &HMR RIGHT_SHIFT SLASH  &trans
-&trans      &kp CAPS                          &trans                   &trans              &trans              &trans          &trans        &HMR RIGHT_BRACKET LEFT_BRACKET  &HMR RIGHT_BRACE LEFT_BRACE  &HMR RIGHT_PARENTHESIS LEFT_PARENTHESIS  &trans                  &trans
-                                                                       &kp ESCAPE          &trans              &kp SPACE       &kp RET       &mo 6                            &kp BACKSPACE
+&trans      &HML LEFT_SHIFT NON_US_BACKSLASH  &HML LEFT_CONTROL GRAVE  &HML LEFT_ALT PIPE  &HML LEFT_GUI NUHS  &trans          &HMR AT SQT   &HMR RIGHT_GUI MINUS             &HMR RIGHT_ALT EQUAL         &HMR RIGHT_CONTROL NON_US_BACKSLASH      &HMR RIGHT_SHIFT SLASH  &trans
+&trans      &kp CAPS                          &trans                   &trans              &trans              &trans          &kp NUHS      &HMR RIGHT_BRACKET LEFT_BRACKET  &HMR RIGHT_BRACE LEFT_BRACE  &HMR RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp GRAVE               &trans
+                                                                       &kp ESCAPE          &trans              &kp SPACE       &kp RET       &trans                           &kp BACKSPACE
             >;
         };
 
