@@ -161,10 +161,10 @@
 
             display-name = "Navi";
             bindings = <
-&trans  &HML LG(LS(NUMBER_1)) LG(NUMBER_1)  &HML LG(LS(NUMBER_2)) LG(NUMBER_2)  &HML LG(LS(NUMBER_3)) LG(NUMBER_3)  &HML LG(LS(NUMBER_4)) LG(NUMBER_4)  &HML LG(LS(NUMBER_5)) LG(NUMBER_5)    &kp C_PREV  &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LEFT_CONTROL  &trans
-&trans  &HML LG(LS(NUMBER_6)) LG(NUMBER_6)  &HML LG(LS(NUMBER_7)) LG(NUMBER_7)  &HML LG(LS(NUMBER_8)) LG(NUMBER_8)  &HML LG(LS(NUMBER_9)) LG(NUMBER_9)  &HML LG(LS(NUMBER_0)) LG(NUMBER_0)    &kp LEFT    &kp DOWN       &kp UP             &kp RIGHT        &kp C_BRI_UP      &trans
-&trans  &to 0                               &to 1                               &to 2                               &trans                              &trans                                &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP        &kp END          &kp C_BRI_DN      &trans
-                                                                                &trans                              &trans                              &kp LEFT_ALT                          &trans      &trans         &trans
+&trans            &HML LG(LS(NUMBER_1)) LG(NUMBER_1)  &HML LG(LS(NUMBER_2)) LG(NUMBER_2)  &HML LG(LS(NUMBER_3)) LG(NUMBER_3)  &HML LG(LS(NUMBER_4)) LG(NUMBER_4)  &HML LG(LS(NUMBER_5)) LG(NUMBER_5)    &kp C_PREV  &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LEFT_CONTROL  &trans
+&trans            &HML LG(LS(NUMBER_6)) LG(NUMBER_6)  &HML LG(LS(NUMBER_7)) LG(NUMBER_7)  &HML LG(LS(NUMBER_8)) LG(NUMBER_8)  &HML LG(LS(NUMBER_9)) LG(NUMBER_9)  &HML LG(LS(NUMBER_0)) LG(NUMBER_0)    &kp LEFT    &kp DOWN       &kp UP             &kp RIGHT        &kp C_BRI_UP      &trans
+&kp LEFT_CONTROL  &to 0                               &to 1                               &to 2                               &trans                              &trans                                &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP        &kp END          &kp C_BRI_DN      &trans
+                                                                                          &kp LEFT_GUI                        &trans                              &kp LEFT_ALT                          &trans      &trans         &trans
             >;
         };
 
