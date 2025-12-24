@@ -98,10 +98,10 @@
 
             display-name = "qwerty";
             bindings = <
-&kp ESCAPE            &kp Q                   &kp W                &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O                 &kp P                       &kp BACKSPACE
+&kp ESCAPE            &kp Q                   &kp W                &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O                 &kp P                       &trans
 &trans                &HMShiftL LEFT_SHIFT A  &HML LEFT_CONTROL S  &HML LEFT_ALT D  &HML LEFT_GUI F  &kp G        &kp H    &HMR RIGHT_GUI J  &HMR RIGHT_ALT K  &HMR RIGHT_CONTROL L  &HMShiftR RIGHT_SHIFT SEMI  &trans
 &kp NON_US_BACKSLASH  &kp Z                   &kp X                &kp C            &kp V            &kp B        &kp N    &kp M             &kp COMMA         &kp DOT               &kp FSLH                    &trans
-                                                                   &kp ESCAPE       &lt 4 TAB        &kp SPACE    &kp RET  &lt 5 DELETE      &kp BACKSPACE
+                                                                   &kp BACKSPACE    &lt 4 TAB        &kp SPACE    &kp RET  &lt 5 DELETE      &kp DELETE
             >;
         };
 
@@ -118,10 +118,10 @@
         Gaming_Layer {
             display-name = "Gaming";
             bindings = <
-&kp BACKSPACE                       &kp Y  &kp U      &kp O       &kp P      &kp ESCAPE       &kp T             &kp Q      &kp W           &kp E  &kp B  &kp TAB
-&kp DELETE                          &kp H  &kp J      &kp K       &kp L      &kp SEMICOLON    &kp G             &kp A      &kp S           &kp D  &kp F  &kp R
-&HML LEFT_CONTROL NON_US_BACKSLASH  &kp I  &kp COMMA  &kp PERIOD  &kp SLASH  &kp M            &kp N             &kp Z      &kp X           &kp C  &kp V  &kp SPACE
-                                                      &kp LGUI    &lt 5 TAB  &kp ENTER        &kp LEFT_CONTROL  &kp LSHFT  &lt 3 LEFT_ALT
+&kp BACKSPACE                       &kp Y  &kp U      &kp O       &kp P      &kp ESCAPE       &kp T      &kp Q      &kp W           &kp E  &kp B  &kp TAB
+&kp DELETE                          &kp H  &kp J      &kp K       &kp L      &kp SEMICOLON    &kp G      &kp A      &kp S           &kp D  &kp F  &kp R
+&HML LEFT_CONTROL NON_US_BACKSLASH  &kp I  &kp COMMA  &kp PERIOD  &kp SLASH  &kp M            &kp N      &kp Z      &kp X           &kp C  &kp V  &kp LEFT_CONTROL
+                                                      &kp LGUI    &lt 5 TAB  &kp ENTER        &kp SPACE  &kp LSHFT  &lt 3 LEFT_ALT
             >;
         };
 
@@ -161,10 +161,10 @@
 
             display-name = "Navi";
             bindings = <
-&trans            &HML LG(LS(NUMBER_1)) LG(NUMBER_1)  &HML LG(LS(NUMBER_2)) LG(NUMBER_2)  &HML LG(LS(NUMBER_3)) LG(NUMBER_3)  &HML LG(LS(NUMBER_4)) LG(NUMBER_4)  &HML LG(LS(NUMBER_5)) LG(NUMBER_5)    &kp C_PREV  &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LEFT_CONTROL  &trans
-&trans            &HML LG(LS(NUMBER_6)) LG(NUMBER_6)  &HML LG(LS(NUMBER_7)) LG(NUMBER_7)  &HML LG(LS(NUMBER_8)) LG(NUMBER_8)  &HML LG(LS(NUMBER_9)) LG(NUMBER_9)  &HML LG(LS(NUMBER_0)) LG(NUMBER_0)    &kp LEFT    &kp DOWN       &kp UP             &kp RIGHT        &kp C_BRI_UP      &trans
-&kp LEFT_CONTROL  &to 0                               &to 1                               &to 2                               &trans                              &trans                                &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP        &kp END          &kp C_BRI_DN      &trans
-                                                                                          &kp LEFT_GUI                        &trans                              &kp LEFT_ALT                          &trans      &trans         &trans
+&trans  &HML LG(LS(NUMBER_1)) LG(NUMBER_1)  &HML LG(LS(NUMBER_2)) LG(NUMBER_2)  &HML LG(LS(NUMBER_3)) LG(NUMBER_3)  &HML LG(LS(NUMBER_4)) LG(NUMBER_4)  &HML LG(LS(NUMBER_5)) LG(NUMBER_5)    &kp C_PREV        &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LEFT_CONTROL  &trans
+&trans  &HML LG(LS(NUMBER_6)) LG(NUMBER_6)  &HML LG(LS(NUMBER_7)) LG(NUMBER_7)  &HML LG(LS(NUMBER_8)) LG(NUMBER_8)  &HML LG(LS(NUMBER_9)) LG(NUMBER_9)  &HML LG(LS(NUMBER_0)) LG(NUMBER_0)    &kp LEFT          &kp DOWN       &kp UP             &kp RIGHT        &kp C_BRI_UP      &trans
+&trans  &to 0                               &to 1                               &to 2                               &trans                              &trans                                &kp END           &kp PAGE_DOWN  &kp PAGE_UP        &kp HOME         &kp C_BRI_DN      &trans
+                                                                                &kp LEFT_GUI                        &trans                              &kp LEFT_GUI                          &kp LEFT_CONTROL  &trans         &kp LEFT_ALT
             >;
         };
 
